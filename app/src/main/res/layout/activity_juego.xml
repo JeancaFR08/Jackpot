@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Juego">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/juego" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/btnSpin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Spin"
+        android:translationX="900dp"
+        android:translationY="250dp"
+        app:srcCompat="@drawable/jugar"/>
+
+
+    <ImageView
+        android:id="@+id/resultImage1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btnSpin"
+        android:layout_toStartOf="@id/resultImage2"
+        android:translationX="-210dp"
+        android:translationY="-30dp"
+        />
+
+    <ImageView
+        android:id="@+id/resultImage2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btnSpin"
+        android:layout_centerHorizontal="true"
+        android:translationX="-185dp"
+        android:translationY="-30dp" />
+
+    <ImageView
+        android:id="@+id/resultImage3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btnSpin"
+        android:layout_toEndOf="@id/resultImage2"
+        android:translationX="-160dp"
+        android:translationY="-30dp" />
+
+    <ImageView
+        android:id="@+id/resultImage4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btnSpin"
+        android:layout_toEndOf="@id/resultImage2"
+        android:translationX="-40dp"
+        android:translationY="-30dp" />
+
+</RelativeLayout>
